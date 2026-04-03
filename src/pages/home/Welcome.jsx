@@ -93,32 +93,6 @@ const Welcome = () => {
             </div>
           </div>
         </div>
-
-        {/* --- Stats Section --- */}
-        <div className="relative z-10 grid grid-cols-2 lg:flex border-t border-slate-200 bg-white/50 backdrop-blur-sm">
-          {stats.map((stat, i) => (
-            <div
-              key={i}
-              className={`
-                flex-1 p-6 md:py-10 text-center
-                ${i < stats.length - 1 ? 'border-r border-slate-200' : ''}
-                ${i < 2 ? 'border-b lg:border-b-0' : ''}
-                border-slate-200
-              `}
-            >
-              <div
-                className="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight leading-none mb-2"
-                style={{ fontFamily: 'Sora, sans-serif' }}
-              >
-                {stat.value}
-                <span className="text-blue-600">{stat.suffix}</span>
-              </div>
-              <div className="text-[10px] md:text-[12px] text-slate-500 uppercase tracking-widest font-bold">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
       </div>
 
       <Footer />
