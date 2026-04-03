@@ -5,19 +5,17 @@ import SuccessAlert from "../../components/user/components/SuccessAlert";
 
 const UsersDashboard = () => {
     return (
-        <div className="min-h-screen flex flex-col">
-            <NavbarUser>
-                <div className="bg-gray-50 flex-1">
-                    <div className="space-y-6">
-                        <ShipForm />
-                    </div>
-                    <div className="space-y-6">
-                        {/* <SuccessAlert /> */}
-                    </div>
+        <NavbarUser>
+            <div className="bg-gray-50 min-h-screen flex flex-col">
+                <div className="space-y-6">
+                    <ShipForm />
                 </div>
-            </NavbarUser>
-            <Footer />
-        </div>
+                <div className="space-y-6">
+                    {/* <SuccessAlert /> */}
+                </div>
+                <Footer />
+            </div>
+        </NavbarUser>
     );
 };
 

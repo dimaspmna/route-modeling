@@ -4,16 +4,14 @@ import FuelEntries from "../../components/fuel/entries/FuelEntries";
 
 const FuelDashboard = () => {
     return (
-        <div className="min-h-screen flex flex-col">
-            <NavbarFuel>
-                <div className="bg-gray- flex-1">
-                    <div className="space-y-6">
-                        <FuelEntries />
-                    </div>
+        <NavbarFuel>
+            <div className="bg-gray- min-h-screen flex flex-col">
+                <div className="space-y-6">
+                    <FuelEntries />
                 </div>
-            </NavbarFuel>
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </NavbarFuel>
     );
 };
 

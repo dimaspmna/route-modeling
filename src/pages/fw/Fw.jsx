@@ -4,16 +4,14 @@ import FwEntries from "../../components/fw/entries/FwEntries";
 
 const FwDashboard = () => {
     return (
-        <div className="min-h-screen flex flex-col">
-            <NavbarFw>
-                <div className="bg-gray-200 flex-1">
-                    <div className="space-y-6">
-                        <FwEntries />
-                    </div>
+        <NavbarFw>
+            <div className="bg-gray-200 min-h-screen flex flex-col">
+                <div className="space-y-6">
+                    <FwEntries />
                 </div>
-            </NavbarFw>
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </NavbarFw>
     );
 };
 

@@ -5,16 +5,14 @@ import SuccessAlert from "../../components/user/components/SuccessAlert";
 
 const FuelsHistory = () => {
     return (
-        <div className="min-h-screen flex flex-col">
-            <NavbarFuel>
-                <div className="bg-gray-50 flex-1">
-                    <div className="space-y-6">
-                        <FuelHistory/>
-                    </div>
+        <NavbarFuel>
+            <div className="bg-gray-50 min-h-screen flex flex-col">
+                <div className="space-y-6">
+                    <FuelHistory/>
                 </div>
-            </NavbarFuel>
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </NavbarFuel>
     );
 };
 

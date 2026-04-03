@@ -5,16 +5,14 @@ import SuccessAlert from "../../components/user/components/SuccessAlert";
 
 const FwsHistory = () => {
     return (
-        <div className="min-h-screen flex flex-col">
-            <NavbarFw>
-                <div className="bg-gray-50 flex-1">
-                    <div className="space-y-6">
-                        <FwHistory/>
-                    </div>
+        <NavbarFw>
+            <div className="bg-gray-50 min-h-screen flex flex-col">
+                <div className="space-y-6">
+                    <FwHistory/>
                 </div>
-            </NavbarFw>
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </NavbarFw>
     );
 };
 

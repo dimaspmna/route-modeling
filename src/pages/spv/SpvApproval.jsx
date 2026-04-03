@@ -4,16 +4,14 @@ import Footer from "../../containers/footer/Footer";
 
 const SpvApproval = () => {
     return (
-        <div className="min-h-screen flex flex-col">
-            <NavbarSpv>
-                <div className="bg-gray- flex-1">
-                    <div className="space-y-6">
-                        <Spv/>
-                    </div>
+        <NavbarSpv>
+            <div className="bg-gray- min-h-screen flex flex-col">
+                <div className="space-y-6">
+                    <Spv/>
                 </div>
-            </NavbarSpv>
-            <Footer />
-        </div>
+                <Footer />
+            </div>
+        </NavbarSpv>
     );
 };
 
